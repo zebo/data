@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="../favicon.ico"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="index,follow">
+<meta name="author" content="Marcio Teixeira">
+<meta name="description" content="Dataset for the Research of Wireless Performance of Sub-1 GHz Networks">
+<meta name="keywords" content="Wireless Network, Signal Propagation, Signal Strength, Network Performance, Field Experiment, IoT, Internet of Things">
+<title>Dataset for the Research of Wireless Performance of Sub-1 GHz Networks</title>
+<style>
+table
+{
+    border-collapse: collapse;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+th{
+	text-align: left;
+}
+thead{
+	border-bottom: 1px solid #000;
+}
+hr{
+	align: left
+}
+figcaption { 
+	align: center
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	/*font-family:Calibri, sans-serif;*/
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	/*font-family:Calibri, sans-serif;*/
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl65
+	{mso-style-parent:style0;
+	text-align:right;}
+.xl66
+	{mso-style-parent:style0;
+	font-weight:700;
+	text-align:right;}
+.xl67
+	{mso-style-parent:style0;
+	mso-number-format:Fixed;
+	text-align:right;}
+
+td{
+	padding-top: 5px;
+	padding-bottom: : 5px;
+}
+
+</style>
+</head>
+<body>
+<h1>Dataset for the Research of Wireless Performance of Sub-1 GHz Networks</h1>
+
+<P>
+
+Presented here is a dataset used for our research of Wireless Performance of Sub-1 GHz Networks. The dataset was recorded using the experimental setups described in [1].  The purpose of our testbed was to explore the influence of practical environments and provide a checklist of potential factors affecting wireless network performance in realistic environments. The figure blow shows the Drone Modules and Ground Modules we used throughout the experiments.
+
+</P>
+
+<div style="text-align:center">
+<img src="ftp/modules-pic.jpg" width="500" height="375" alt="Modules Pic">
+<br>Drone Modules (a) and Ground Modules (b)
+</div>
+
+<p>
+We set up controlled experiments in laboratory (indoor) and outdoor environments. Five experimental scenarios were arranged: Indoor, Street, Open-field, Ground-to-Drone (G2D) and Drone-to-Drone (D2D). Digi XBee-PRO 900HP modules [2], from the Digi family, was selected for the end-to-end wireless network. With the coordinator and the configuration software, XBee Configuration & Test Utility (XCTU), we could remotely change the settings of the transmitter during the tests. Detailed setups for specific scenarios can be found in [1]. The figure blow shows the general setup. 
+</p>
+
+<div style="text-align:center">
+<img src="ftp/general-setup.png" width="600" height="257" alt="General Setup">
+<br>General Setup
+</div>
+
+<P>
+
+In this study, our focus was to initiate the checklist of realistic parameters in the context of Sub-1 GHz wireless networks. The experiments were implemented with indoor and urban outdoor scenarios. The result shows that the wireless signal propagation is generally affected by the characteristics of the medium of the line of transmission (distance, path, surrounding) [3], hardware configuration, and qualitative conditions such as weather and hardware installation. we categorize them into four general categories: path, configuration, weather, and installation. A detailed checklist can be found in [1]. The table below shows the categores and factors from the checklist.
+
+</P>
+
+<div style="text-align: center;padding-bottom: 10px;">Categores and Factors</div>
+<div>
+	<table align="center">
+		<thead><tr><th width="200">Categores</th><th width="200">Factors</th></tr></thead>
+		<tbody>
+			<tr><td>Path</td><td>Line of Transmission</td></tr>
+			<tr><td>Path</td><td>Distance</td></tr>
+			<tr><td>Path</td><td>Fresnel Zone</td></tr>
+			<tr><td>Configuration</td><td>Transmit Power Level</td></tr>
+			<tr><td>Weather</td><td>Weather Conditions</td></tr>
+			<tr><td>Weather</td><td>Humidity</td></tr>
+			<tr><td>Weather</td><td>Temperature</td></tr>
+			<tr><td>Installation</td><td>Hardware Component</td></tr>
+			<tr><td>Installation</td><td>Module Position</td></tr>
+			<tr><td>Installation</td><td>Mobility</td></tr>
+			<tr><td>Installation</td><td>Antenna Direction</td></tr>
+		</tbody>
+	</table>
+</div>
+
+
+<div style="padding-top: 30px;"></div>
+
+<B>Download</B> the <a href="ftp/wireless-900hp-2020.csv">entire dataset</A>.
+
+<P>
+<B>Acknowledgement</B>:
+This work has been supported under the grant ID NPRP10-0206-170360 funded by the Qatar National Research Fund (QNRF) and grant#2017/01055-4 Sao Paulo Research Foundation (FAPESP). The statements made herein are solely the responsibility of the authors.
+
+<P>
+References:
+<ol>
+<li> Z. Yang, A. Ghubaish, D. Unal and R. Jain, 
+"Factors Affecting the Performance of Sub-1 GHz IoT Wireless Networks," 2020.
+</li>
+<li>Digi International Inc., “Digi XBee-PRO 900HP,” https://www.digi.com/products/embedded-systems/digi-xbee/rf-modules/sub-1-ghz-modules/xbee-pro-900hp, last accessed June 20, 2020.</li>
+<li>R. Jain, “Channel Models: A Tutorial,” WiMAX Forum AATG, 21 pp., June 2007, http://www.cse.wustl.edu/~jain/wimax/channel_model_tutorial.htm, last accessed June 20, 2020. </li>
+</ol>
+<HR>
+<a href="index.html">Back to Raj Jain's home page</a>
+</body></html>
